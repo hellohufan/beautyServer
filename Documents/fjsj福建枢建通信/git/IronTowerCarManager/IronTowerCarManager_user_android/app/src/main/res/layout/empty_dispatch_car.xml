@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="center_horizontal"
+  >
+  <LinearLayout
+    android:layout_marginTop="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+      android:id="@+id/iv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/no_car"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/empty_color"
+      android:textSize="16sp"
+      android:includeFontPadding="false"
+      android:layout_marginTop="17sp"
+      android:text="还未派车哦~点击下面按钮派车吧!"/>
+
+  </LinearLayout>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:background="@mipmap/btn_blue"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:layout_marginTop="26dp"
+    android:text="开始派车"
+    android:textColor="@color/mainColor"
+    android:id="@+id/tvDispatchCar"/>
+
+
+
+
+</LinearLayout>

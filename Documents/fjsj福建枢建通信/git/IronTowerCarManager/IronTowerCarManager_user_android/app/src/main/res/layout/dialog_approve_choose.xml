@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:orientation="vertical"
+  android:layout_height="match_parent">
+  <LinearLayout
+    android:background="@mipmap/windowbg_big"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="47dp"
+      android:background="@mipmap/textarea_bg">
+      <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="98dp"
+        android:padding="10dp"
+
+        android:gravity="top"
+        android:hint="请输入驳回理由"
+        android:background="@null"/>
+    </LinearLayout>
+
+    <RelativeLayout
+      android:layout_marginTop="13dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+          android:id="@+id/layCancel"
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@mipmap/btn_gray_window">
+          <TextView
+            android:layout_centerInParent="true"
+            android:textSize="17.5sp"
+
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/cancel"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+          android:id="@+id/layConfirm"
+          android:layout_width="wrap_content"
+          android:layout_marginLeft="19dp"
+          android:layout_height="wrap_content"
+          android:background="@mipmap/btn_red_window">
+          <TextView
+            android:layout_centerInParent="true"
+            android:textSize="17.5sp"
+
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/confirm"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+      </LinearLayout>
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/window_titlebg">
+    <ImageView
+      android:layout_marginLeft="19dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/window_icon2"/>
+    <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:text="审批驳回"
+      android:layout_marginLeft="4dp"
+      android:textSize="16sp"
+      android:textColor="@color/white"
+      android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+
+</FrameLayout>

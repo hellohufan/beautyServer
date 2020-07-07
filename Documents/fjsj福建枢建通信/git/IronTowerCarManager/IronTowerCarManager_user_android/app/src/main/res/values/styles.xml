@@ -1,0 +1,70 @@
+<resources>
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorPrimary</item>
+
+  </style>
+
+  <style name="SeachViewActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/white</item>
+    <item name="colorAccent">@color/white</item>
+    <!--toolbar菜单项图标的颜色-->
+    <item name="android:textColorSecondary">@android:color/white</item>
+
+    <!--<item name="searchViewStyle">@style/SearchViewStyle</item>-->
+  </style>
+  <!--<style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">-->
+    <!--<item name="searchHintIcon">@null</item>-->
+  <!--</style>-->
+
+
+  <style name="MyDialog" parent="@android:style/Theme.Holo.Dialog">
+    <!-- 是否有边框 -->
+    <!--是否在悬浮Activity之上  -->
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <!--标题  -->
+    <!--阴影  -->
+    <!--<item name="android:windowIsTranslucent">true</item>&lt;!&ndash;半透明&ndash;&gt;-->
+    <!-- 进入和退出的动画 -->
+    <item name="android:windowAnimationStyle">@style/Animation.AppCompat.DropDownUp</item>
+
+    <!-- 点外边可以消失  -->
+    <item name="android:windowCloseOnTouchOutside">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowFrame">@null</item><!--边框-->
+    <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    <item name="android:windowNoTitle">true</item><!--无标题-->
+    <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+    <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+
+  </style>
+  <!--<style name="MyDialog" parent="@android:style/Theme.Holo.Dialog">-->
+    <!--&lt;!&ndash; 是否有边框 &ndash;&gt;-->
+    <!--<item name="android:windowFrame">@null</item>-->
+    <!--&lt;!&ndash;是否在悬浮Activity之上  &ndash;&gt;-->
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <!--&lt;!&ndash;标题  &ndash;&gt;-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--&lt;!&ndash;阴影  &ndash;&gt;-->
+    <!--<item name="android:windowIsTranslucent">true</item>&lt;!&ndash;半透明&ndash;&gt;-->
+    <!--&lt;!&ndash; 进入和退出的动画 &ndash;&gt;-->
+    <!--<item name="android:windowAnimationStyle">@style/MyDialogAnimation</item>-->
+
+    <!--&lt;!&ndash; 点外边可以消失  &ndash;&gt;-->
+    <!--<item name="android:windowCloseOnTouchOutside">true</item>-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--<item name="android:windowContentOverlay">@null</item>-->
+
+  <!--</style>-->
+
+
+
+
+
+
+</resources>

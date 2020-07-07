@@ -1,0 +1,51 @@
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="56dp"
+  android:orientation="vertical"
+  android:gravity="center_vertical"
+  android:background="?android:attr/selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+    android:id="@+id/layFile"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <ImageView
+      android:id="@+id/ivFile"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="19dp"
+      android:src="@mipmap/up_level"
+      />
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:orientation="vertical">
+      <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvFileName"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="上一级"
+        android:layout_height="wrap_content"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvFileTime"
+        android:textSize="16sp"
+        android:textColor="#a1a1a1"
+        android:text="2018-12-12 12:12:12"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+  </LinearLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/line_dark"/>
+
+
+</LinearLayout>

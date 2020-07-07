@@ -1,0 +1,97 @@
+<resources>
+  <string name="app_name">铁塔车管家</string>
+  <string name="basic_info">基本信息</string>
+  <string name="exit_app">退出登录</string>
+  <string name="start">开始</string>
+  <string name="end">结束</string>
+  <string name="where_go">你要去哪儿</string>
+  <string name="where_start">你从哪里出发</string>
+   <!--登录-->
+  <string name="rent_car">铁塔车管家-</string>
+  <string name="user_head">用户端</string>
+  <string name="forget_pwd">忘记密码?</string>
+  <string name="login">登录</string>
+  <string name="user_no_empty">用户名不能为空</string>
+  <string name="pwd_empty">密码不能为空</string>
+  <string name="login_wait">登录中</string>
+  <!--首页-->
+  <string name="exit_app_info">确定退出登录吗？</string>
+  <string name="cancel">取消</string>
+  <string name="confirm">确定</string>
+  <string name="travel_records">行程记录</string>
+  <!--个人中心-->
+  <string name="unknown_error">未知错误</string>
+  <string name="not_img">选的不是图片!</string>
+  <!--基本信息-->
+  <string name="contact_mobile">联系电话</string>
+  <string name="company">单位名称</string>
+  <string name="sound_hint">订单声音提示</string>
+  <string name="notice_hint">是否开启通知栏通知</string>
+  <string name="modify_pwd">修改密码</string>
+  <string name="contact_us">联系我们</string>
+  <string name="update_app">版本更新</string>
+  <string name="please_wait">加载中</string>
+
+  <!--行程记录-->
+  <string name="no_task">暂无相关数据哦~</string>
+  <string name="submit">提交</string>
+  <string name="help_call_car">代人叫车</string>
+  <string name="remark">备注</string>
+  <string name="file">附件</string>
+  <string name="reason">用车事由</string>
+
+  <string name="sure_user_car">确认申请</string>
+  <string name="input_remark">请输入相关备注信息</string>
+  <string name="input_reason">请输入用车事由</string>
+  <string name="phone_empty">手机号码不能为空</string>
+  <string name="early_depart_time">预计出发时间</string>
+  <string name="lately_depart_time">预计返回时间</string>
+  <string name="choose_car">车辆选择</string>
+  <string name="sure_use_car">你是否确认用车?</string>
+  <string name="car_type">车辆类型</string>
+  <string name="num">数量</string>
+  <string name="approve_car">用车审批</string>
+  <string name="car_manage">派车管理</string>
+  <string name="people_car_manage">人车管理</string>
+  <string name="chart_statistical">报表统计</string>
+  <string name="system_messages">系统消息</string>
+  <!--人车管理-->
+  <string name="manage_car">车辆管理</string>
+  <string name="manage_driver">驾驶员管理</string>
+  <string name="approve_beg_off">请假审批</string>
+  <string name="approve_business_trip">出场审批</string>
+  <string name="appear_record">出场纪录</string>
+  <string name="back_record">回场纪录</string>
+  <string name="no_permission">没有权限</string>
+  <string name="no_permission_forerver">被设置成永久没有权限,需要到设置里面更改权限</string>
+  <string name="agree">同意</string>
+  <string name="reject">驳回</string>
+  <string name="order_no">订单号:</string>
+  <string name="next_step">下一步</string>
+  <string name="cancel_order">取消订单</string>
+  <string name="withdraw_order">撤销订单</string>
+  <string name="driver_position">司机位置</string>
+  <string name="pay_back">轨迹回放</string>
+  <string name="service">车内整洁度</string>
+  <string name="speed">平稳驾驶</string>
+  <string name="attitude">服务态度</string>
+  <string name="name_empty">用车人姓名不能为空</string>
+  <string name="reApply">重新申请</string>
+  <string name="long_journey">长途</string>
+  <string name="city">市区</string>
+  <string name="month">月份</string>
+  <string name="all_year_drive_trend">近半年用车数趋势</string>
+  <string name="all_year_kilometer_trend">近半年用车费趋势</string>
+  <string name="share_rent_car">共享租车</string>
+  <string name="begin_search">开始搜索</string>
+  <string name="upload">上传</string>
+  <string name="downloading">下载中…</string>
+  <string name="phone_length">手机号码不是11位</string>
+  <string name="accompany">同行人员</string>
+  <string name="input_accompany">请输入同行人员</string>
+  <string name="car_trace">车辆监控</string>
+  <string name="trace_view">轨迹查看</string>
+  <string name="trace_pay_back">轨迹回放</string>
+
+
+</resources>

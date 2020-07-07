@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:background="@mipmap/search_input_bg"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+      <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="15dp"
+        android:imeOptions="actionSearch"
+
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        android:hint="用车人/车辆/驾驶员"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_hint"/>
+      <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/search_btn"/>
+
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipeRefreshLayout"
+      android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/footer_bg">
+      <RelativeLayout
+        android:id="@+id/layApproveTime"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_centerInParent="true"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content">
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/approval_time"/>
+            <ImageView
+              android:id="@+id/ivApprovalTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/time_down"/>
+          </LinearLayout>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            android:text="调度时间"/>
+        </LinearLayout>
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/layCreateTime"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_centerInParent="true"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content">
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/establishl_time"/>
+            <ImageView
+              android:id="@+id/ivCreateTime"
+              android:visibility="invisible"
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/time_down"/>
+          </LinearLayout>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            android:text="提交时间"/>
+        </LinearLayout>
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/layFilter"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        >
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_centerInParent="true"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/filter"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            android:text="筛选"/>
+        </LinearLayout>
+      </RelativeLayout>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</FrameLayout>

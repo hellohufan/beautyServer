@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/comment_bg">
+      <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="34dp"
+          android:textSize="15sp"
+          android:text="@string/speed"
+          android:textColor="@color/black"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="15sp"
+          android:text="和"
+          android:visibility="invisible"
+          android:textColor="@color/black"/>
+        <ImageView
+          android:id="@+id/ivSpeed1"
+          android:paddingLeft="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivSpeed2"
+
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivSpeed3"
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivSpeed4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivSpeed5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+
+        <TextView
+          android:id="@+id/tvSpeed"
+          android:textSize="14sp"
+          android:textColor="@color/describe_dark"
+          android:layout_marginLeft="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </LinearLayout>
+      <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="34dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="34dp"
+          android:textSize="15sp"
+          android:text="@string/service"
+          android:textColor="@color/black"/>
+
+        <ImageView
+          android:id="@+id/ivService1"
+          android:paddingLeft="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivService2"
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivService3"
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivService4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivService5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+
+        <TextView
+          android:id="@+id/tvService"
+          android:textSize="14sp"
+          android:textColor="@color/describe_dark"
+          android:layout_marginLeft="5dp"
+          android:singleLine="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </LinearLayout>
+      <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="34dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="34dp"
+          android:textSize="15sp"
+          android:text="@string/attitude"
+          android:textColor="@color/black"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="15sp"
+          android:text="和"
+          android:visibility="invisible"
+          android:textColor="@color/black"/>
+        <ImageView
+          android:id="@+id/ivAttitude1"
+          android:paddingLeft="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivAttitude2"
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivAttitude3"
+          android:layout_width="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:layout_height="wrap_content"
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivAttitude4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+        <ImageView
+          android:id="@+id/ivAttitude5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+
+          android:src="@mipmap/star_gray"/>
+
+        <TextView
+          android:id="@+id/tvAttitude"
+          android:textSize="14sp"
+          android:textColor="@color/describe_dark"
+          android:layout_marginLeft="5dp"
+          android:singleLine="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </LinearLayout>
+
+      <View
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_dark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+      <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etIdea"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="top"
+        android:layout_height="150dp"
+        android:background="@null"
+
+        android:textSize="16sp"
+        android:hint="请输入您对本次行程的意见及建议"
+        android:textColorHint="@color/describe_dark"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/layEvaluate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="center"
+      android:background="@mipmap/btn_blue_order"
+      >
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"
+        android:text="确认行程并评价"/>
+    </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+</FrameLayout>

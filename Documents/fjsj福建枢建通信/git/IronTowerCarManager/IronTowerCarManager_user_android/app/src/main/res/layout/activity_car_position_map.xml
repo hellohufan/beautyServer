@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+          android:id="@+id/ivLocation"
+          android:layout_width="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="24dp"
+          android:layout_marginRight="15dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/location"/>
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="1dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:background="@mipmap/map_footerbg">
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/location_blue"
+                android:text="定位"
+                android:textColor="#010101"
+                android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+          </LinearLayout>
+
+          <View
+            android:layout_width="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="22dp"
+            android:background="#e9e9e9"/>
+
+          <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <TextView
+                android:id="@+id/tvTrace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/trajectory"
+                android:text="轨迹"
+                android:textColor="#010101"
+                android:textSize="16sp"/>
+
+            </RelativeLayout>
+          </LinearLayout>
+        </LinearLayout>
+      </RelativeLayout>
+    </FrameLayout>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

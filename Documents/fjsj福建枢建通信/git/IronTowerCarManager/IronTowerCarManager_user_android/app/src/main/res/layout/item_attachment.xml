@@ -1,0 +1,66 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="56dp"
+  android:layout_marginLeft="9dp"
+  android:layout_marginRight="9dp"
+  android:orientation="vertical">
+  <View
+    android:id="@+id/viewLine"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:background="@color/line_dark"/>
+
+  <RelativeLayout
+    android:id="@+id/layChooseAttachment"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+
+    android:layout_height="55dp"
+    android:clickable="true">
+    <ImageView
+      android:id="@+id/ivFile"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="14dp"
+      android:layout_centerVertical="true"
+      android:src="@mipmap/more_file"/>
+    <TextView
+      android:id="@+id/tvAttachment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="6dp"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/ivArrow"
+      android:layout_toRightOf="@id/ivFile"
+      android:hint="点击选择附件"
+      android:singleLine="true"
+      android:textColor="@color/black"
+
+      android:textColorHint="@color/text_hint"
+      android:textSize="16sp"
+      />
+    <ImageView
+      android:id="@+id/ivArrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/ivReduceAttachment"
+      android:src="@mipmap/arrow"/>
+    <ImageView
+      android:id="@+id/ivReduceAttachment"
+      android:layout_width="wrap_content"
+      android:background="?android:attr/selectableItemBackground"
+
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:paddingLeft="9dp"
+      android:paddingRight="23dp"
+      android:src="@mipmap/reduce"/>
+
+
+  </RelativeLayout>
+</LinearLayout>

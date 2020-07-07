@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolBar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:contentInsetStart="0dp"
+
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RelativeLayout
+          android:id="@+id/layUserCarTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@mipmap/tab_left_focus">
+          <TextView
+            android:id="@+id/tvUserCarTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用车次数"
+            android:textColor="@color/mainColor"
+
+            android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/layUseCarMoney"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:background="@mipmap/tab_right_unfocus">
+          <TextView
+            android:id="@+id/tvUseCarMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用车费用"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        </RelativeLayout>
+      </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+      android:id="@+id/framelayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"></FrameLayout>
+  </LinearLayout>
+
+
+</FrameLayout>

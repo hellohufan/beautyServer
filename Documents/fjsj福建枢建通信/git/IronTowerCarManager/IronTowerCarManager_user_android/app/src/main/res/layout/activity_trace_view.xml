@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/topbg2"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/track_viewing_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:id="@+id/layCar"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivBeginTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/car_num"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+        android:layout_toRightOf="@id/ivBeginTime"
+        android:text="选择车辆"
+        android:textColor="#9c9b9b"/>
+
+      <TextView
+        android:id="@+id/tvCarNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow1"
+        android:textColor="@color/black"/>
+
+
+      <ImageView
+        android:id="@+id/ivArrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:background="@color/line_dark"/>
+    <RelativeLayout
+      android:id="@+id/layBeginTime"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+
+      android:layout_weight="1"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_usecar"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+
+        android:layout_toRightOf="@id/ivEndTime"
+        android:text="起始时间"
+        android:textColor="#9c9b9b"/>
+
+      <TextView
+        android:id="@+id/tvBeginTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow2"
+        android:textColor="@color/black"/>
+
+      <ImageView
+        android:id="@+id/ivArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:background="@color/line_dark"/>
+
+
+    <RelativeLayout
+      android:id="@+id/layEndTime"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginBottom="10dp"
+
+      android:layout_weight="1"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivEndTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_usecar"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+
+        android:layout_toRightOf="@id/ivEndTime1"
+        android:text="结束时间"
+        android:textColor="#9c9b9b"/>
+
+      <TextView
+        android:id="@+id/tvEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow4"
+        android:textColor="@color/black"/>
+
+      <ImageView
+        android:id="@+id/ivArrow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+
+  </LinearLayout>
+  <RelativeLayout
+    android:id="@+id/laySearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@mipmap/btn_blue_submit">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:paddingBottom="4dp"
+
+      android:text="@string/confirm"
+      android:textColor="@color/white"
+      android:textSize="16sp"/>
+  </RelativeLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="18dp"
+    android:layout_marginBottom="6dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <View
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_weight="1"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="6dp"
+      android:background="#cecece"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:textSize="17sp"
+      android:text="历史记录"
+      android:textColor="@color/black"
+      android:layout_height="wrap_content"/>
+    <View
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="1dp"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="8dp"
+      android:background="#cecece"/>
+  </LinearLayout>
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+          android:layout_marginTop="22dp"
+          android:layout_width="76dp"
+          android:layout_height="76dp"
+          android:src="@mipmap/user_photo"/>
+
+          <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@mipmap/driver_bg"
+          android:orientation="vertical">
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/sex"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="性别:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvSex"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/place"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="籍贯:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvNativePlace"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/mobile_carer"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="联系电话:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvPhoneNo"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+
+
+          <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/license"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="驾照类型:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvLicenseType"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+          <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/department"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="所属部门:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvDeptName"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/relations"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="劳动关系:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvLaborRelation"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+          <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+          <LinearLayout
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="43dp">
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/note"/>
+            <TextView
+              android:layout_marginLeft="12dp"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="备注信息:"
+              android:textColor="@color/describe_dark"
+              android:textSize="16sp"/>
+            <TextView
+              android:id="@+id/tvRemark"
+              android:layout_marginLeft="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:textColor="@color/black"/>
+          </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+      <RelativeLayout
+        android:id="@+id/layCall"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="right"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/call_white"/>
+
+      </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+  </FrameLayout>
+
+
+
+
+
+</FrameLayout>

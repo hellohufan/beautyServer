@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  >
+
+
+  <android.support.v7.widget.Toolbar
+
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@mipmap/topbg"
+    app:contentInsetStart="0dp"
+
+    >
+    <RelativeLayout
+      android:id="@+id/toolbar_back"
+      android:layout_width="55dp"
+      android:layout_height="match_parent"
+      android:background="?android:attr/selectableItemBackground"
+
+      android:clickable="true">
+      <ImageView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+      android:id="@+id/toolbar_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="#fff"
+      android:textSize="18sp"
+      tools:text="MVPArt"/>
+
+
+  </android.support.v7.widget.Toolbar>
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/topbg2"/>
+  <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/use_car_bg"
+        android:orientation="vertical">
+        <RelativeLayout
+          android:id="@+id/layBeginAddr"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:layout_marginTop="7dp"
+
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/start_dot"/>
+          <TextView
+            android:id="@+id/tvBeginAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivStart"
+            android:paddingRight="25dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+        <RelativeLayout
+          android:id="@+id/layEndAddr"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/end_dot"/>
+          <TextView
+            android:id="@+id/tvEndAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivEnd"
+            android:paddingRight="25dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:gravity="center_vertical">
+          <RelativeLayout
+            android:id="@+id/layBeginTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+            <ImageView
+              android:id="@+id/ivTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="13dp"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/time"/>
+            <TextView
+              android:id="@+id/tvBeginTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_marginLeft="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/ivTime"
+              android:hint="@string/early_depart_time"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+
+
+          </RelativeLayout>
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <View
+              android:layout_width="7dp"
+              android:layout_height="1dp"
+              android:background="#c8c8c8"/>
+            <View
+              android:layout_width="7dp"
+              android:layout_height="1dp"
+              android:layout_marginLeft="2dp"
+              android:background="#c8c8c8"/>
+          </LinearLayout>
+          <RelativeLayout
+            android:id="@+id/layEndTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:clickable="true">
+
+            <TextView
+              android:id="@+id/tvEndTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_marginRight="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@id/ivTimeArrow"
+              android:hint="@string/lately_depart_time"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+
+            <ImageView
+              android:id="@+id/ivTimeArrow"
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:layout_marginRight="13dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/arrow"/>
+
+
+          </RelativeLayout>
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:gravity="center_vertical">
+          <RelativeLayout
+            android:id="@+id/layPassengerNum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+            <ImageView
+              android:id="@+id/ivHelp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="13dp"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/people"/>
+            <TextView
+              android:id="@+id/tvPassengerNum"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/ivHelp"
+              android:hint="用车人数"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+            <ImageView
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:layout_marginRight="13dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/arrow"/>
+
+
+          </RelativeLayout>
+          <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line_dark"/>
+          <RelativeLayout
+            android:id="@+id/layCarUse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:clickable="true">
+            <ImageView
+              android:id="@+id/ivUseType"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="13dp"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/use_type"/>
+            <TextView
+              android:id="@+id/tvCarUse"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/ivUseType"
+              android:paddingRight="25dp"
+              android:hint="用车用途"
+              android:singleLine="true"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+            <ImageView
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:layout_marginRight="13dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/arrow"/>
+
+
+          </RelativeLayout>
+
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:gravity="center_vertical">
+          <RelativeLayout
+            android:id="@+id/layDistanceType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+            <ImageView
+              android:id="@+id/ivTypeDrive"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="13dp"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/type_drive"/>
+            <TextView
+              android:id="@+id/tvDistanceType"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/ivTypeDrive"
+              android:paddingRight="25dp"
+              android:hint="长/短途"
+              android:singleLine="true"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+            <ImageView
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:layout_marginRight="13dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/arrow"/>
+
+
+          </RelativeLayout>
+          <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/line_dark"/>
+          <RelativeLayout
+            android:id="@+id/layTripType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+            <ImageView
+              android:id="@+id/ivTripType"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="13dp"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/money"/>
+            <TextView
+              android:id="@+id/tvTripType"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="7dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/ivTripType"
+              android:paddingRight="25dp"
+              android:hint="单程/往返"
+              android:singleLine="true"
+              android:text="往返"
+              android:textColor="@color/black"
+              android:textColorHint="@color/text_hint"
+              android:textSize="16sp"
+              />
+            <ImageView
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:layout_marginRight="13dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/arrow"/>
+
+
+          </RelativeLayout>
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+
+        <RelativeLayout
+          android:id="@+id/layHelpCall"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/user_name"/>
+          <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivUserName"
+            android:paddingRight="25dp"
+            android:hint="@string/help_call_car"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+        <RelativeLayout
+          android:id="@+id/layAccompany"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivAccompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/accompany"/>
+          <TextView
+            android:id="@+id/tvAccompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivAccompany"
+            android:paddingRight="25dp"
+            android:hint="@string/accompany"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+
+        <RelativeLayout
+          android:id="@+id/layReason"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/reason"/>
+          <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivReason"
+            android:paddingRight="25dp"
+            android:hint="@string/reason"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+        <RelativeLayout
+          android:id="@+id/layRemark"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/note"/>
+          <TextView
+            android:id="@+id/tvRemak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivNote"
+            android:paddingRight="25dp"
+            android:hint="@string/remark"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:background="@color/line_dark"/>
+        <RelativeLayout
+          android:id="@+id/layAttachment"
+          android:layout_width="match_parent"
+          android:layout_height="56dp"
+          android:layout_marginBottom="7dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:background="?android:attr/selectableItemBackground"
+
+          android:clickable="true">
+          <ImageView
+            android:id="@+id/ivAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/more_file"/>
+          <TextView
+            android:id="@+id/tvAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivAttachArrow"
+            android:layout_toRightOf="@id/ivAttachment"
+            android:paddingRight="25dp"
+            android:hint="@string/file"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            />
+          <ImageView
+            android:id="@+id/ivAttachArrow"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow"/>
+
+
+        </RelativeLayout>
+
+
+      </LinearLayout>
+
+      <RelativeLayout
+        android:id="@+id/laySubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@mipmap/btn_blue_order">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:paddingBottom="4dp"
+
+          android:text="@string/sure_user_car"
+          android:textColor="@color/white"
+          android:textSize="17sp"/>
+      </RelativeLayout>
+
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

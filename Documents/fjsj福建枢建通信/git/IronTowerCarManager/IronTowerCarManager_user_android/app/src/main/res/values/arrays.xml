@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="chooseImage">
+    <item>拍照上传</item>
+    <item>本地上传</item>
+
+  </string-array>
+  <string-array name="chooseFile">
+    <item>拍照上传</item>
+    <item>相册及第三方上传</item>
+    <item>SD卡文件上传</item>
+  </string-array>
+</resources>

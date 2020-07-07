@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+
+  <android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@mipmap/topbg"
+    app:contentInsetStart="0dp"
+    >
+    >
+    <RelativeLayout
+      android:id="@+id/toolbar_back"
+      android:layout_width="55dp"
+      android:layout_height="match_parent"
+      android:background="?android:attr/selectableItemBackground"
+
+      android:clickable="true">
+      <ImageView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+      android:id="@+id/toolbar_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="#fff"
+      android:textSize="18sp"
+      tools:text="MVPArt"/>
+
+
+  </android.support.v7.widget.Toolbar>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+      android:id="@+id/bmapView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:background="@mipmap/driver_info_bg">
+      <ImageView
+        android:id="@+id/ivDriverPhonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/user_photo_gray"/>
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ivDriverPhonto"
+        android:orientation="vertical">
+        <TextView
+          android:id="@+id/tvDriverName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textSize="16sp"/>
+        <TextView
+          android:id="@+id/tvDriverNo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#747474"
+          android:textSize="16sp"/>
+
+      </LinearLayout>
+      <ImageView
+        android:id="@+id/ivCall"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/call_btn"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+  </FrameLayout>
+
+
+</LinearLayout>

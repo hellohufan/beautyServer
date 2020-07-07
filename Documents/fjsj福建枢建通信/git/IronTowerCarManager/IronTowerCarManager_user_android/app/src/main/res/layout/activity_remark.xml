@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_height="match_parent">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/topbg2"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/remark_bg">
+        <android.support.v7.widget.AppCompatEditText
+          android:id="@+id/etRemark"
+          android:textColor="@color/black"
+          android:gravity="top"
+          android:maxLines="6"
+          android:paddingLeft="30dp"
+          android:paddingTop="30dp"
+          android:paddingRight="30dp"
+          android:textColorHint="@color/text_hint"
+          android:textSize="16sp"
+          android:hint="@string/input_remark"
+          android:layout_width="wrap_content"
+          android:background="@null"
+          android:layout_height="match_parent"/>
+    
+  </LinearLayout>
+ <RelativeLayout
+   android:id="@+id/laySubmit"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:background="@mipmap/btn_blue_submit">
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_centerInParent="true"
+     android:layout_height="wrap_content"
+     android:paddingBottom="4dp"
+
+     android:text="@string/submit"
+     android:textColor="@color/white"
+     android:textSize="16sp"/>
+ </RelativeLayout>
+
+
+</LinearLayout>

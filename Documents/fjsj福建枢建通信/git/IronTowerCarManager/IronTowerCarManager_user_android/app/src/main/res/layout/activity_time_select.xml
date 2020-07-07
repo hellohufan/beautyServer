@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/topbg2"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg4"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:id="@+id/layBeginCreateTime"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivBeginTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_start"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+        android:layout_toRightOf="@id/ivBeginTime"
+        android:text="创建开始时间"
+        android:textColor="@color/almost_black"/>
+
+      <TextView
+        android:id="@+id/tvBeginCreateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow1"
+        android:textColor="@color/describe_dark"/>
+
+
+      <ImageView
+        android:id="@+id/ivArrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:background="@color/line_dark"/>
+    <RelativeLayout
+      android:id="@+id/layEndCreateTime"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+
+      android:layout_weight="1"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_end"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+
+        android:layout_toRightOf="@id/ivEndTime"
+        android:text="创建结束时间"
+        android:textColor="@color/almost_black"/>
+
+      <TextView
+        android:id="@+id/tvEndCreateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow2"
+        android:textColor="@color/describe_dark"/>
+
+      <ImageView
+        android:id="@+id/ivArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:background="@color/line_dark"/>
+    <RelativeLayout
+      android:id="@+id/layBeginTime1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+
+      android:layout_weight="1"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivBeginTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_start"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+
+        android:layout_toRightOf="@id/ivBeginTime1"
+        android:text="出发开始时间"
+        android:textColor="@color/almost_black"/>
+
+      <TextView
+        android:id="@+id/tvBeginTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow3"
+        android:textColor="@color/describe_dark"/>
+
+      <ImageView
+        android:id="@+id/ivArrow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:background="@color/line_dark"/>
+    <RelativeLayout
+      android:id="@+id/layEndTime1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginBottom="10dp"
+
+      android:layout_weight="1"
+      android:layout_marginLeft="28dp"
+      android:layout_marginRight="28dp">
+      <ImageView
+        android:id="@+id/ivEndTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/time_end"
+        android:layout_centerVertical="true"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:textSize="17sp"
+
+        android:layout_toRightOf="@id/ivEndTime1"
+        android:text="出发结束时间"
+        android:textColor="@color/almost_black"/>
+
+      <TextView
+        android:id="@+id/tvEndTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+
+        android:layout_toLeftOf="@id/ivArrow4"
+        android:textColor="@color/describe_dark"/>
+
+      <ImageView
+        android:id="@+id/ivArrow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"/>
+
+
+    </RelativeLayout>
+
+  </LinearLayout>
+  <RelativeLayout
+    android:id="@+id/laySearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@mipmap/btn_blue_submit">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:paddingBottom="4dp"
+
+      android:text="@string/begin_search"
+      android:textColor="@color/white"
+      android:textSize="16sp"/>
+  </RelativeLayout>
+
+
+</LinearLayout>

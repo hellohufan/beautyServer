@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@mipmap/manage_car_listbg">
+  <RelativeLayout
+    android:layout_marginTop="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+      android:id="@+id/tvCarNo"
+      android:layout_centerVertical="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:text="闽DN8887L"/>
+    <TextView
+      android:id="@+id/tvState"
+      android:layout_centerVertical="true"
+
+      android:textColor="@color/white"
+      android:textSize="14.5sp"
+      android:gravity="center"
+      android:paddingLeft="6dp"
+      android:paddingRight="6dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"/>
+  </RelativeLayout>
+  <View
+    android:layout_marginLeft="26.5dp"
+    android:layout_marginRight="26.5dp"
+    android:layout_width="match_parent"
+    android:layout_marginTop="7dp"
+    android:background="@color/line_dark"
+    android:layout_height="1dp"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="29dp"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:src="@mipmap/seat"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:id="@+id/tvSeatNum"
+      android:layout_width="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:textColor="@color/black"/>
+    <View
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_weight="1"/>
+    <ImageView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/gas"/>
+    <TextView
+      android:id="@+id/tvOutputVolume"
+      android:layout_width="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_height="wrap_content"
+      android:text="1.5L"
+      android:textSize="15sp"
+      android:textColor="@color/black"/>
+    <View
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_weight="1"/>
+    <ImageView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/type_car"/>
+    <TextView
+      android:id="@+id/tvCarType"
+      android:layout_width="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:textColor="@color/black"/>
+    <View
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_weight="1"/>
+
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="29dp"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:src="@mipmap/model"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:id="@+id/tvName"
+      android:layout_width="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:textColor="@color/black"/>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

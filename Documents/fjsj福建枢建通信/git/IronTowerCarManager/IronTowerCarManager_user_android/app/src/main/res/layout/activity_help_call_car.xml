@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_height="match_parent">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/topbg2"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/member_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="28dp"
+      android:layout_marginLeft="28dp"
+      android:layout_weight="1">
+      <ImageView
+        android:id="@+id/ivName"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_name"/>
+      <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/ivName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:background="@null"
+        android:hint="请输入用车人姓名"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_hint"/>
+      <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:background="@color/line_dark"
+        android:layout_toLeftOf="@id/layName"/>
+      <LinearLayout
+        android:id="@+id/layName"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="14dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="通讯录"
+          android:textColor="@color/black"
+          android:textSize="16sp"/>
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"/>
+
+      </LinearLayout>
+
+    </RelativeLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_marginLeft="26dp"
+      android:layout_marginRight="26dp"
+      android:layout_height="1dp"
+      android:background="@color/line_dark"/>
+    <RelativeLayout
+      android:layout_marginBottom="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginRight="28dp"
+      android:layout_marginLeft="28dp"
+      android:layout_weight="1">
+      <ImageView
+        android:id="@+id/ivMobile"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+
+        android:src="@mipmap/mobile_carer"/>
+      <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etMobile"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/ivMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:inputType="number"
+        android:background="@null"
+        android:hint="请输入用车人手机号码"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_hint"/>
+    </RelativeLayout>
+
+  </LinearLayout>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:layout_gravity="center_horizontal"
+    android:text="司机会直接联系用车人,请提前通知用车人准备出行"
+    android:textSize="16sp"
+    android:textColor="#3a3a3a"/>
+  <RelativeLayout
+    android:id="@+id/laySubmit"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/btn_blue_submit">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_height="wrap_content"
+      android:paddingBottom="4dp"
+
+      android:text="@string/submit"
+      android:textColor="@color/white"
+      android:textSize="16sp"/>
+  </RelativeLayout>
+
+
+</LinearLayout>
