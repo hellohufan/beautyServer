@@ -1,0 +1,62 @@
+<resources>
+  <string name="app_name">铁塔车管家</string>
+  <string name="start">开始</string>
+  <string name="end">结束</string>
+  <string name="myTask">我的任务</string>
+  <string name="waitingOrders">待接订单</string>
+  <string name="navigation">导航</string>
+  <string name="takeOrder">接单</string>
+  <string name="no_order">暂无订单!</string>
+  <string name="no_task">暂无相关任务~快去接单吧</string>
+  <string name="sure_take_order">确定开始接单吗？</string>
+  <string name="cancel">取消</string>
+  <string name="confirm">确定</string>
+  <string name="exit_app">退出登录</string>
+  <string name="basic_info">基本信息</string>
+  <string name="travel_records">行程记录</string>
+  <string name="order_fee">费用结算</string>
+  <string name="chart_records">报表统计</string>
+  <string name="exit_app_info">确定退出登录吗?</string>
+
+  <string name="unknown_error">未知错误</string>
+  <string name="not_img">选的不是图片!</string>
+  <string name="contact_mobile">联系电话</string>
+  <string name="company">单位名称</string>
+  <string name="sound_hint">订单声音提示</string>
+  <string name="notice_hint">是否开启通知栏通知</string>
+  <string name="modify_pwd">修改密码</string>
+  <string name="contact_us">联系我们</string>
+  <string name="update_app">版本更新</string>
+  <string name="view_navigation">查看导航线</string>
+  <string name="predict">预计</string>
+  <string name="back">返回</string>
+  <string name="payback_trace">轨迹回放</string>
+  <string name="service">车内整洁度</string>
+  <string name="speed">平稳驾驶</string>
+  <string name="attitude">服务态度</string>
+  <string name="click_view_expand">点击查看详情</string>
+  <string name="click_view_shrink">点击缩起</string>
+  <string name="please_wait">加载中</string>
+  <string name="login_wait">登录中</string>
+  <string name="drive_times">出车数</string>
+  <string name="kilometer">公里数</string>
+  <string name="all_year_drive_trend">近半年出车数趋势</string>
+  <string name="all_year_kilometer_trend">近半年公里数趋势</string>
+  <string name="month">月份</string>
+  <string name="city">市区</string>
+  <string name="long_journey">长途</string>
+  <string name="no_permission">没有权限</string>
+  <!--登录-->
+  <string name="login">登录</string>
+  <string name="forget_pwd">忘记密码?</string>
+  <string name="driver_head">司机端</string>
+  <string name="rent_car">铁塔车管家-</string>
+  <string name="user_no_empty">用户名不能为空</string>
+  <string name="pwd_empty">密码不能为空</string>
+  <string name="title">请假类型</string>
+  <string name="system_messages">系统消息</string>
+  <string name="no_beg_off">暂无相关请假事项~</string>
+  <string name="apply">申请</string>
+
+
+</resources>

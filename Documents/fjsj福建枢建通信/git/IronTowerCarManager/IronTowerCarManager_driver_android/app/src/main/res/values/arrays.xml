@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="chooseImage">
+    <item>拍照上传</item>
+    <item>本地上传</item>
+
+  </string-array>
+  <string-array name="begOffItems">
+    <item>事假</item>
+    <item>病假</item>
+    <item>婚假</item>
+    <item>丧假</item>
+    <item>休假</item>
+    <item>产假</item>
+    <item>陪产假</item>
+    <item>年假</item>
+
+
+
+  </string-array>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:contentInsetStart="0dp"
+      >
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="58dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/apply_leave_bg"
+      android:orientation="vertical">
+      <LinearLayout
+        android:id="@+id/layBeginTime"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="58dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/time_start"/>
+        <TextView
+          android:id="@+id/tvBeginTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:hint="请选择请假开始时间"
+          android:textColor="@color/black"
+
+          android:singleLine="true"
+          android:textColorHint="@color/text_hint"
+          android:textSize="16sp"
+          />
+        <View
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          />
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"/>
+
+
+      </LinearLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="26dp"
+
+        android:layout_marginRight="26dp"
+        android:background="@color/line_dark"/>
+      <LinearLayout
+        android:id="@+id/layEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/time_end"/>
+        <TextView
+          android:id="@+id/tvEndTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:textColor="@color/black"
+          android:hint="请选择请假结束时间"
+          android:singleLine="true"
+          android:textColorHint="@color/text_hint"
+          android:textSize="16sp"
+          />
+        <View
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          />
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"/>
+
+
+      </LinearLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="26dp"
+
+        android:layout_marginRight="26dp"
+        android:background="@color/line_dark"/>
+      <LinearLayout
+        android:id="@+id/layType"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/use_type"/>
+        <TextView
+          android:id="@+id/tvType"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:hint="请选择请假类型"
+          android:singleLine="true"
+          android:textColor="@color/black"
+
+          android:textColorHint="@color/text_hint"
+          android:textSize="16sp"
+          />
+        <View
+          android:layout_width="0dp"
+          android:layout_height="1dp"
+          android:layout_weight="1"
+          />
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"/>
+
+
+      </LinearLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="26dp"
+
+        android:layout_marginRight="26dp"
+        android:background="@color/line_dark"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:src="@mipmap/reason"/>
+        <android.support.v7.widget.AppCompatEditText
+          android:id="@+id/etReason"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:minHeight="100dp"
+          android:gravity="top"
+          android:layout_weight="1"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="6dp"
+          android:layout_marginRight="29dp"
+          android:background="@null"
+          android:hint="请输入请假事由"
+          android:textColor="@color/black"
+
+          android:textColorHint="@color/text_hint"
+          android:textSize="16sp"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+      android:id="@+id/laySubmit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:layout_gravity="center_horizontal"
+      android:background="@mipmap/btn_blue_order">
+      <TextView
+        android:layout_width="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="确认申请"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+    </RelativeLayout>
+
+
+  </LinearLayout>
+
+
+</FrameLayout>

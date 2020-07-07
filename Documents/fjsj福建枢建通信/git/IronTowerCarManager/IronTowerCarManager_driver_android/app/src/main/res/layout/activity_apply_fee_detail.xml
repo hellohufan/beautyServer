@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@mipmap/topbg"
+      app:contentInsetStart="0dp"
+      >
+      >
+      <RelativeLayout
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:clickable="true">
+        <ImageView
+
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@mipmap/ic_arrow_back_white_24dp"/>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:text="MVPArt"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@mipmap/topbg2"/>
+
+  </LinearLayout>
+  <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="行程杂费"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/three_line"
+        android:orientation="vertical">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/road_toll"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="过路费:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etToll"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:hint="请输入过路费"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="27dp"
+
+          android:layout_marginRight="27dp"
+          android:background="@color/line_dark"/>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/parking"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="停车费:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etPark"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+
+            android:hint="请输入停车费"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="27dp"
+
+          android:layout_marginRight="27dp"
+          android:background="@color/line_dark"/>
+        <LinearLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginBottom="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/hotel"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="住宿费:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etRest"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:hint="请输入住宿费"
+
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+      </LinearLayout>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="里程时长"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/two_line"
+        android:orientation="vertical">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/mileage"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="里程数:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etMile"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:hint="请输入里程数"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginLeft="27dp"
+
+          android:layout_marginRight="27dp"
+          android:background="@color/line_dark"/>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginBottom="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/time_use"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:includeFontPadding="false"
+
+            android:text="时"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:visibility="invisible"
+            android:text="长"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="长:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etMinutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:hint="请输入时长(分钟)"
+
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+
+      </LinearLayout>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="加油费"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/one_line"
+        android:orientation="vertical">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/oil"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="加油费:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etGasCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:inputType="numberDecimal"
+
+            android:hint="请输入加油费"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+      </LinearLayout>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="其他费用"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/one_line"
+        android:orientation="vertical">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/other_bill"/>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+
+            android:text="其他费用:"
+            android:textColor="#747474"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etOtherCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="29dp"
+            android:background="@null"
+            android:inputType="numberDecimal"
+
+            android:hint="请输入其他费用"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+
+      <RelativeLayout
+        android:id="@+id/laySubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/btn_blue_order">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:paddingBottom="4dp"
+          android:text="提交"
+          android:textColor="@color/white"
+          android:textSize="17sp"/>
+      </RelativeLayout>
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

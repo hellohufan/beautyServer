@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: me.jessyan:retrofit-url-manager:1.2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a9524704e10a51aae070a87fb4a461a/retrofit-url-manager-1.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a9524704e10a51aae070a87fb4a461a/retrofit-url-manager-1.2.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.jessyan/retrofit-url-manager/1.2.5/23d5ec9ed73cb138173101c5b9b25c9d7c4616b9/retrofit-url-manager-1.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.jessyan/retrofit-url-manager/1.2.5/61b01df97d304b93cc69c7f89b398cea15ec395d/retrofit-url-manager-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
