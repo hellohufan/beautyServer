@@ -26,7 +26,7 @@ public interface Api {
     //正式
 //    String APP_DOMAIN = "http://www.fjgcgl.org.cn:50001/";
     //公车宝
-    String APP_DOMAIN= "http://gcb.fjhtxl.net:81/";
+    String APP_DOMAIN= "http://fjtt.fjhtxl.net:81/";
 //    测试
 //    String APP_DOMAIN = "http://gc2.0.fjhtxl.cn/";
 
