@@ -28,17 +28,7 @@ public interface Api {
 
 
   //铁塔车管家正式
-  String APP_DOMAIN = "http://gcb.fjhtxl.net:81/";
-  //测试
-//  String APP_DOMAIN =  "http://10.110.2.181:9090";
-
-
-  //正式
-//  String APP_DOMAIN = "http://www.fjgcgl.org.cn:50001/";
-
-  //测试
-//  String APP_DOMAIN = "http://gc2.0.fjhtxl.cn:81/";
-//  String APP_DOMAIN = "http://gccs.fjhtxl.net:81/";
+  String APP_DOMAIN = "http://fjtt.fjhtxl.net:81/";
   String FILEPATH = Environment.getExternalStorageDirectory() + "/gc/Download/";
     int REQUEST_SUCCESS = 0;
 }
