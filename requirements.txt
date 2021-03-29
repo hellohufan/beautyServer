@@ -56,7 +56,7 @@ pluggy==0.7.1
 py==1.6.0
 pycryptodome==3.6.4
 pycryptodomex==3.6.6
-Pygments==2.2.0
+Pygments==2.7.4
 PyJWT==1.5.3
 PyMySQL==0.8.0
 pytest==3.7.1
