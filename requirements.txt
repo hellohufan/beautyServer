@@ -71,6 +71,6 @@ six==1.9.0
 South==1.0.2
 submail==0.4
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==15.1.0
 websockets==3.2
